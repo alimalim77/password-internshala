@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Login</title>
+  </head>
+  <body>
+    <h2>User Login</h2>
+    <form id="loginForm" method="POST" action="/login">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <div>
+        <button type="submit">Login</button>
+      </div>
+    </form>
+
+    <script>
+      const loginForm = document.getElementById("loginForm");
+      loginForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        console.log("A");
+        const response = await fetch("/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ username, password }),
+        });
+        console.log("B");
+        const data = await response.json();
+        console.log(data);
+
+        if (response.ok) {
+          alert(data.message);
+        } else {
+          alert(data.error);
+        }
+
+        return false; // Prevent default form submission
+      });
+    </script>
+  </body>
+</html>
