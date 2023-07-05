@@ -14,6 +14,9 @@ The User Login application is a basic login system that validates the username a
 - Display of error message on invalid credentials
 
 ## UI
-<img width="534" alt="image" src="https://github.com/alimalim77/password-internshala/assets/52186295/8c9623c5-b231-44a5-95f7-2671fe9e8c95">
-<img width="392" alt="image" src="https://github.com/alimalim77/password-internshala/assets/52186295/9e5a1e83-0988-4c98-bab0-f37681a8a25a">
-<img width="535" alt="image" src="https://github.com/alimalim77/password-internshala/assets/52186295/2d1a7fa9-2831-4693-94de-276aa35ed221">
+
+<img width="548" alt="image" src="https://github.com/alimalim77/password-internshala/assets/52186295/131337fe-8c53-4e20-bb10-bc2e3cd86ed4">
+<img width="551" alt="image" src="https://github.com/alimalim77/password-internshala/assets/52186295/612262de-3fed-4945-94af-3f5f18c8e5a4">
+<img width="386" alt="image" src="https://github.com/alimalim77/password-internshala/assets/52186295/e0571bd1-604f-48d0-9d27-175bdaf02d50">
+
+
