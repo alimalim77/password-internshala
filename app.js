@@ -4,22 +4,18 @@ const path = require("path");
 
 const app = express();
 
-// Middleware to parse JSON request bodies
 app.use(bodyParser.json());
 
-// Serve the HTML file
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-// Route for user login
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
   console.log("Hello World");
 
-  // Validate username format and length
+  // Can be converted to hashmap to improve the complexity but tried keeping calrity in the web app
   const isAlphanumeric = (str) => {
-    // Check if the string contains only alphanumeric characters
     const alphanumericChars =
       "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
