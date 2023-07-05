@@ -1,6 +1,5 @@
-# Project
-## User Login
-A simple user login web application built with Express.js.
+## Project Name
+User login: A simple user login web application built with Express.js.
 
 ## Description
 
