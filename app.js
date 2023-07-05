@@ -31,8 +31,9 @@ app.post("/login", (req, res) => {
 
     return true;
   };
+
   const validUsername =
-    alphanumericChars(str) && username.length >= 6 && username.length <= 12;
+    isAlphanumeric(username) && username.length >= 6 && username.length <= 12;
 
   // Validate password length
   const validPassword = password.length >= 6;
